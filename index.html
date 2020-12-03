@@ -22,18 +22,29 @@
   <style>
 			html,body {
 				font-family: Monospace;
-				background-color: #000000;
+        color:#000;
+				background-color: #fff;
 				margin: 0px;
 				overflow: hidden;
         overscroll-behavior-x: none;
         overscroll-behavior-y: none;
 			}
+      #load {
+        display: flex; 
+        justify-content: center; 
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        align-items: center; 
+        flex-direction: column;
+      }
   </style>
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
+  <div id="load">Loading...</div>
   <!-- Add your site or application content here -->
   <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
@@ -43,6 +54,7 @@
   <script src="js/vendor/PLYLoader.js"></script>
   <script src="js/vendor/TrackballControls.js"></script>
   <script src="js/vendor/WebGL.js"></script>
+  <script src="js/vendor/dat.gui.min.js"></script>
 
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
